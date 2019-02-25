@@ -1,5 +1,12 @@
 # Configuration du VPS
 
+{% hint style="warning" %}
+Pre-requis : 
+
+Connaissance de Linux   
+Connaissance de Docker et Docker-Compose  
+{% endhint %}
+
 Se connecter sur le VPS
 
 ```text
