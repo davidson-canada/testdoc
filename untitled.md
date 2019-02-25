@@ -38,7 +38,15 @@ sudo usermod -aG docker sammy
 
 Fermer et ouvrir une session avec l'user non-root
 
+Configuration du Firewall
 
+```text
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
+sudo ufw allow 22/tcp
+ufw enable
+sudo ufw status
+```
 
 
 
