@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 Pre-requis : 
 
-Connaissance de Linux   
+Connaissance Intermediaire Linux   
 Connaissance de Docker et Docker-Compose  
 {% endhint %}
 
