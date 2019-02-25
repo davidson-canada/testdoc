@@ -36,7 +36,9 @@ Ajout de l'utilisateur non-root pour utiliser Docker
 sudo usermod -aG docker sammy
 ```
 
+{% hint style="info" %}
 Fermer et ouvrir une session avec l'user non-root
+{% endhint %}
 
 Configuration du Firewall
 
