@@ -25,7 +25,7 @@ Ajouter les droits "sudo" pour l'utilisateur créer
 usermod -aG sudo sammy
 ```
 
-Installation Docker et Docker-Compose
+Installation Docker
 
 ```text
 sudo apt update
@@ -35,6 +35,13 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 sudo apt update
 apt-cache policy docker-ce
 sudo apt install docker-ce
+```
+
+Installation Docker-Compose
+
+```text
+sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
 ```
 
 Ajout de l'utilisateur non-root pour utiliser Docker
