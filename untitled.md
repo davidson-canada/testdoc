@@ -60,5 +60,10 @@ ufw enable
 sudo ufw status
 ```
 
+Générer un mot de passe chiffre
 
+```text
+sudo install apache2-utils
+htpasswd -nb -B admin <password> | cut -d ":" -f 2
+```
 
