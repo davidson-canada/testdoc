@@ -3,4 +3,5 @@
 * [Usine Logiciel Davidson](README.md)
 * [Architecture](architecture.md)
 * [Configuration du VPS](untitled.md)
+* [Automatisation](technologies.md)
 
