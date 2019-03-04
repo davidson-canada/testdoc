@@ -1,6 +1,6 @@
-# Automatisation
+# Ansible
 
-Installation Ansible
+Installation d'ansible
 
 ```text
 sudo apt install python-setuptools -y

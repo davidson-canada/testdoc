@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 Pre-requis : 
 
-Connaissance Intermediaire Linux   
+Connaissance Intermédiaire Linux   
 Connaissance de Docker et Docker-Compose  
 {% endhint %}
 
@@ -60,7 +60,7 @@ ufw enable
 sudo ufw status
 ```
 
-Générer un mot de passe chiffre
+Générer un mot de passe chiffré
 
 ```text
 sudo install apache2-utils

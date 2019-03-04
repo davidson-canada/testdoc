@@ -2,6 +2,7 @@
 
 * [Usine Logiciel Davidson](README.md)
 * [Architecture](architecture.md)
-* [Configuration du VPS](untitled.md)
-* [Automatisation](technologies.md)
+* [Configuration du VPS](configuration-du-vps.md)
+* [Automatisation](technologies/README.md)
+  * [Ansible](technologies/ansible.md)
 
