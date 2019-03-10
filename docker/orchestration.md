@@ -2,30 +2,43 @@
 
 ![](../.gitbook/assets/flat-550x550-075-f.u1.jpg)
 
+{% hint style="info" %}
+[https://container.training/swarm-selfpaced.yml.html\#1](https://container.training/swarm-selfpaced.yml.html#1)\`\`
+
+`docker --help`
+{% endhint %}
+
+\`\`
+
+## Images Docker
+
+Le site [Docker Hub](https://hub.docker.com/) fournit une base d'image preconfigure et fonctionnel.
+
 ```text
-docker --help
+#Telecharge une image depuis un registre (Dockerhub, quay.io)
+docker pull busybox
+# Envoyer une image vers un registre (Dockerhub, quay.io)
+docker push <private registre>
 ```
 
-Pour télécharger une image Docker depuis le site [Docker Hub](https://hub.docker.com/)
+## Run Docker
 
-`docker pull busybox`
-
-Pour Envoyer une image vers un registre prive \(Dockerhub, quay.io\)
-
-`docker push <private registre>`
-
-Lancer des container
+Lancer des containers
 
 ```text
+#Lance un conteneur Busybox
+
 docker run busybox
+
+#le paramètre < -it > Pour lancer les sessions interactives <tty>
+
 docker run -it busybox sh
+
+#le paramètre < -rm > permet de supprimer le container juste après l'avoir arrêter.
+
 docker run -it -rm prakhar1989/foodtrucks-web bash
 ```
 
-> le paramètre &lt; -it &gt; Pour lancer les sessions interactives &lt;tty&gt;
->
-> le paramètre &lt; -rm &gt; permet de supprimer le container juste après l'avoir arrêter.
->
 > Pratique pour les tests &lt;run Once&gt;
 
 Arrêter les containers
@@ -49,7 +62,7 @@ docker images
 docker rmi <images>
 ```
 
-## Networking
+## Reseaux
 
 Pour afficher les interfaces réseaux
 
@@ -86,5 +99,11 @@ Pour "builder" une image :
 
 ```text
 docker build -t prakhar1989/catnip .
+```
+
+## Logs
+
+```text
+docker logs <image-name>
 ```
 

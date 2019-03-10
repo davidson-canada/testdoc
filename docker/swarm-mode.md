@@ -1,4 +1,4 @@
-# Swarm-Mode
+# Swarm Mode
 
 {% hint style="info" %}
 Pre-requis:
@@ -12,7 +12,23 @@ Vos nœuds serveurs doivent avoir le client Docker Installe.
 * Connecter les applications sur le réseau
 {% endhint %}
 
+{% hint style="warning" %}
+Les ports suivants sont a ouvrir:
+
+**TCP port 2377** for cluster management communications
+
+**TCP** and **UDP port 7946** for communication among nodes
+
+**UDP port 4789** for overlay network traffic
+{% endhint %}
+
 Pour mettre la haute disponibilité de l'infrastructure, on va configurer les nœuds Docker.
+
+{% hint style="info" %}
+Changer le port par defaut pour le mode swarm
+
+docker swarm init --advertise-addr eth0:7777 --listen-addr eth0:7777
+{% endhint %}
 
 Initialiser Docker Swarm  sur le serveur manager
 
@@ -32,5 +48,11 @@ Créer un réseau Overlay pour que les noeuds puissent communiquer entre eux
 
 ```text
 docker network create -d overlay myoverlaynetwork
+```
+
+Affiche les noeuds du cluster 
+
+```text
+docker node ls
 ```
 
