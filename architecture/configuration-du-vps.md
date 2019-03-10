@@ -5,7 +5,7 @@ Pre-requis :
 
 Connaissance Intermédiaire Linux   
 Connaissance de Docker, Docker-Compose et Docker-Swarm  
-Kubernetes est un plus  
+Connaissance de Kubernetes est un plus  
 {% endhint %}
 
 ## O.S
