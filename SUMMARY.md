@@ -20,4 +20,5 @@
   * [Cadvisor](monitoring/cadvisor.md)
   * [Prometheus](monitoring/prometheus.md)
 * [Backup](backup.md)
+* [Tips & Astuces](tips-and-astuces.md)
 
