@@ -55,7 +55,7 @@ Fermer et ouvrir une session avec l'user non-root
 
 ## Sécurité
 
-### Configuration du Firewall
+### Firewall
 
 ```text
 sudo ufw allow 80/tcp
@@ -65,7 +65,78 @@ ufw enable
 sudo ufw status
 ```
 
-### Configuration Fail2Ban
+### Fail2Ban
+
+Installation
+
+```text
+sudo apt-get update && apt-get upgrade -y
+sudo apt-get install fail2ban
+sudo apt-get install sendmail-bin sendmail
+```
+
+Configuration
+
+Changer fail2bail.local
+
+```text
+cp /etc/fail2ban/fail2ban.conf /etc/fail2ban/fail2ban.local
+```
+
+{% hint style="info" %}
+Pour les version Debian et Ubuntu
+{% endhint %}
+
+```text
+cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
+```
+
+Modifier jail.local
+
+{% code-tabs %}
+{% code-tabs-item title="/etc/fail2ban/jail.local" %}
+```bash
+# "backend" specifies the backend used to get files modification.
+# Available options are "pyinotify", "gamin", "polling", "systemd" and "auto".
+# This option can be overridden in each jail as well.
+
+. . .
+
+backend = systemd
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+WhitelistIP
+
+{% code-tabs %}
+{% code-tabs-item title="/etc/fail2ban/jail.local" %}
+```text
+[DEFAULT]
+
+# "ignoreip" can be an IP address, a CIDR mask or a DNS host. Fail2ban will not
+# ban a host which matches an address in this list. Several addresses can be
+# defined using space separator.
+ignoreip = 127.0.0.1/8 123.45.67.89
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+Configurer les alertes par mail
+
+{% hint style="info" %}
+`destemail`: The email address where you would like to receive the emails.
+
+`sendername`: The name under which the email shows up.
+
+`sender`: The email address from which Fail2ban will send emails.
+{% endhint %}
+
+Sauvegarder vos modifications et redémarrer le service
+
+```text
+service fail2ban restart
+```
 
 ### Générer un mot de passe chiffré
 
