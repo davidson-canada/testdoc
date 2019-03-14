@@ -18,7 +18,8 @@
     * [Tips & Astuce](micro-service/docker/tips-and-astuce.md)
   * [A.P.I. Gateway](micro-service/a.p.i./README.md)
     * [Kong API](micro-service/a.p.i./kong-api.md)
-* [Reseaux](reseaux.md)
+* [Reseaux](reseaux/README.md)
+  * [Cisco - Meraki](reseaux/cisco-meraki.md)
 * [C.I](c.i/README.md)
   * [Drone C.I](c.i/drone-c.i/README.md)
     * [Webhooks et Git](c.i/drone-c.i/webhooks-et-git.md)
@@ -35,4 +36,7 @@
   * [Prometheus](monitoring/prometheus.md)
 * [Backup](backup.md)
 * [Tips & Astuces](tips-and-astuces.md)
+* [O.S](o.s/README.md)
+  * [Linux](o.s/linux.md)
+  * [Windows](o.s/windows.md)
 
