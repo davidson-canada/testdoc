@@ -1,4 +1,4 @@
-# Configuration du VPS
+# Configuration d'un VPS
 
 {% hint style="warning" %}
 Pre-requis : 

@@ -1,7 +1,5 @@
 # Quick-Start
 
-![](../.gitbook/assets/flat-550x550-075-f.u1.jpg)
-
 {% hint style="info" %}
 [https://container.training/swarm-selfpaced.yml.html\#1](https://container.training/swarm-selfpaced.yml.html#1)\`\`
 

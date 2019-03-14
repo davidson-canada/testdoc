@@ -2,5 +2,5 @@
 description: Configuration d'un serveur type VPS
 ---
 
-# Automatisation
+# Infrastructure AS Code
 
