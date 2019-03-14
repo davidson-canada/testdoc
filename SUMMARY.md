@@ -21,6 +21,8 @@
   * [Jenkins](c.i/jenkins/README.md)
     * [Webhooks et Git](c.i/jenkins/webhooks-et-git.md)
     * [Pipeline CI/CD](c.i/jenkins/pipeline-ci-cd.md)
+* [Cerberus-Testing](cerberus-testing/README.md)
+  * [How-To](cerberus-testing/how-to.md)
 * [A.P.I.](a.p.i./README.md)
   * [Kong API](a.p.i./kong-api.md)
 * [Securite](securite.md)
