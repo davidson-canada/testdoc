@@ -2,7 +2,7 @@
 
 * [Wiki Tech - Davidson](README.md)
 * [Architecture](architecture.md)
-* [Infrastructure AS Code](technologies/README.md)
+* [Infrastructure As Code](technologies/README.md)
   * [Capistrano](technologies/capistrano.md)
   * [Configuration d'un VPS](technologies/configuration-du-vps.md)
   * [Terraform](technologies/terraform.md)
